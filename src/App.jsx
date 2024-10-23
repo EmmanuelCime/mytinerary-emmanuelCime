@@ -4,7 +4,6 @@ import Cities from "./Pages/Cities.jsx"
 import Details from "./Pages/Details.jsx"
 import NotFound from "./Pages/NotFound.jsx"
 import StandardLayout from "./Layouts/StandardLayout.jsx"
-import DetailsLayout from "./Layouts/DetailsLayout.jsx"
 
 
 const router = createBrowserRouter([
@@ -13,12 +12,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "/home", element: <Home></Home> },
-      { path: "/cities", element: <Cities></Cities> }
-    ]
-  },
-  {
-    element: <DetailsLayout></DetailsLayout>,
-    children: [
+      { path: "/cities", element: <Cities></Cities> },
       { path: "/details", element: <Details></Details> }
     ]
   },
