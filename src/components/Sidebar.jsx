@@ -21,13 +21,13 @@ const Sidebar = () => {
             </button>
 
             <div className="flex items-center md:hidden">
-            <Link to="./Home.jsx" className="text-white font-bold text-xl">
+                <Link to="./" className="text-white font-bold text-xl">
                     MyTinerary
                 </Link>
-                <Link to="./Home.jsx" className="ps-3">
+                <Link to="./" className="ps-3">
                     <img src={logo} alt="Logo" className="w-20 p-1 cursor-pointer" />
                 </Link>
-                
+
             </div>
 
 
@@ -42,12 +42,12 @@ const Sidebar = () => {
 
                         <ul className="mt-4 space-y-10 pb-10">
                             <li className="mb-2">
-                                <Link to="./Home.jsx" className="text-white font-semibold md:pe-5 sm:text-[14px] sm:pe-3 md:text-[15px] lg:text-[20px] hover:bg-sky-700 xl:py-2 xl:px-6 rounded">
+                                <Link to="./" className="text-white font-semibold md:pe-5 sm:text-[14px] sm:pe-3 md:text-[15px] lg:text-[20px] hover:bg-sky-700 xl:py-2 xl:px-6 rounded">
                                     Home
                                 </Link>
                             </li>
                             <li className="mb-2">
-                                <Link to="./Cities.jsx" className="text-white font-semibold md:pe-5 sm:text-[14px] sm:pe-3 md:text-[15px] lg:text-[20px] hover:bg-sky-700 xl:py-2 xl:px-6 rounded">
+                                <Link to="./cities" className="text-white font-semibold md:pe-5 sm:text-[14px] sm:pe-3 md:text-[15px] lg:text-[20px] hover:bg-sky-700 xl:py-2 xl:px-6 rounded">
                                     Cities
                                 </Link>
                             </li>

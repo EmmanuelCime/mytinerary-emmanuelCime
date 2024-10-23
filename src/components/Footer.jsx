@@ -62,7 +62,7 @@ function Footer() {
             />
             <button className="bg-rose-500 text-white px-4 py-2 rounded-md text-xs md:text-sm xl:text-base">Subscribe</button>
 
-            <Link to="/Home.jsx" className="pe-3">
+            <Link to="/" className="pe-3">
               <img src={logo} alt="Logo" className="w-14 md:w-20 cursor-pointer pt-4 md:pt-7 pb-0" />
             </Link>
             <p className="text-center text-xs xl:text-base">© 2024 MyTenary. All rights reserved.</p>

@@ -1,24 +1,35 @@
-import './App.css'
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
-import SideBar from "./components/Sidebar.jsx"
-import Header from "./components/Header.jsx"
-import Home from "./Home.jsx"
-import Cities from "./Cities.jsx"
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import Home from "./Pages/Home.jsx"
+import Cities from "./Pages/Cities.jsx"
+import Details from "./Pages/Details.jsx"
+import NotFound from "./Pages/NotFound.jsx"
+import StandardLayout from "./Layouts/StandardLayout.jsx"
+import DetailsLayout from "./Layouts/DetailsLayout.jsx"
 
+
+const router = createBrowserRouter([
+  {
+    element: <StandardLayout></StandardLayout>,
+    children: [
+      { path: "/", element: <Home></Home> },
+      { path: "/home", element: <Home></Home> },
+      { path: "/cities", element: <Cities></Cities> }
+    ]
+  },
+  {
+    element: <DetailsLayout></DetailsLayout>,
+    children: [
+      { path: "/details", element: <Details></Details> }
+    ]
+  },
+  { path: "/*", element: <NotFound></NotFound> }
+])
 
 function App() {
 
   return (
     <>
-      <Router>
-          <SideBar></SideBar>
-          <Header></Header>
-          <Routes>
-            <Route path="/" element={<Navigate to="/Home.jsx" replace />} />
-            <Route path="/Home.jsx" element={<Home />} />
-            <Route path="/Cities.jsx" element={<Cities />} />
-          </Routes>
-      </Router>
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
 }

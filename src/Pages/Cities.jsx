@@ -1,4 +1,3 @@
-import Footer from "./components/Footer"
 
 
 function Cities() {
@@ -13,8 +12,6 @@ function Cities() {
                     <CitySearch></CitySearch>
                 </div>
             </div>
-
-            <Footer></Footer>
 
         </>
     )

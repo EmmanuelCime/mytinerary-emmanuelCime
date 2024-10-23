@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-import Carousel from "../Carousel"
+import Carousel from "../Components/Carousel.jsx"
 import img1 from "../assets/Borabora.jpg"
 import img2 from "../assets/Mandalay.jpeg"
 import img3 from "../assets/Marrakech.jpg"
 
 
-function Main() {
+function Home() {
     return (
         <>
             <div className="h-full bg-gradient-to-b from-sky-950 to-sky-800 p-5">
@@ -56,7 +56,7 @@ function CallToAction() {
             <p className="text-lg md:text-2xl lg:text-4xl font-bold text-white m-3 md:m-7">
                 Live an <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">UNIQUE EXPERIENCE</span> and discover places where <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-yellow-300">DREAMS COME TRUE!</span> ✨
             </p>
-            <Link to="/Cities.jsx" className="mt-4 px-6 py-2 text-xs md:text-lg lg:text-xl text-white font-bold bg-indigo-800 hover:bg-indigo-950 rounded-full">
+            <Link to="/cities" className="mt-4 px-6 py-2 text-xs md:text-lg lg:text-xl text-white font-bold bg-indigo-800 hover:bg-indigo-950 rounded-full">
                 🚀 YES, I WOULD LOVE TO! 🌍
             </Link>
         </div>
@@ -64,4 +64,4 @@ function CallToAction() {
 }
 
 
-export default Main
+export default Home
